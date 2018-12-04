@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-import numpy
-
 def main():
     d = int(input())
     v = list(map(float, input().strip().split(' ')))
