@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import math
+
 def main():
     d = int(input())
     v = list(map(float, input().strip().split(' ')))
@@ -10,10 +12,8 @@ def main():
         li.append( v[i] * w[i] )
     res = sum(li)
 
-    print(res)
-    print("%.12f" % res)
-    print(round(res, 12) )
-    print("%.12f" % round(res, 12))
+    print("%.12f" % round(res, 8))
+
 
 if __name__ == '__main__':
     main()
