@@ -10,7 +10,7 @@
 
 ## Mátrix algoritmusok
 
-:one::zero: Mátrix kondíciószáma  
+:one::zero: Mátrix kondíciószáma :heavy_check_mark:  
 :one::zero: Mátrix LU felbonása  
 :one::zero: Mátrix Cholesky felbontása  
 :two: 2 × 2es Mátrix 2-normája  
