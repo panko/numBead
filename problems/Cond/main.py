@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
 
-import numpy as np
-
 from Matrix1Norma import norm1
 from MatrixInfNorma import norm_inf
+from MatrixMatrix import print_matrix
+import random
 
 def main():
     A = read_input()
-    np_A = np.array(A)
-    print()
-    A_inv = np.linalg.inv(np_A).tolist()
-    asdA_inv = inv_mat(A)
+    A_inv = inv_mat(A)
     res_inf = norm_inf(A) *  norm_inf(A_inv)
     res_one = norm1(A) *  norm1(A_inv)
     print("%.12f %.12f" % (round(res_inf, 12), round(res_one, 12)) )
@@ -36,12 +33,11 @@ def inv_mat(M):
                 R[i][j] = 1
     # do the inverse
     for i in range(n):
+        while R[i][i] == 0:
+            R[i], R[i+2] = R[i+2], R[i]
         t = R[i][i]
         for j in range(i, 2 * n):
-            if t == 0:
-                R[i][j] = 0.901
-            else:
-                R[i][j] = R[i][j] / t
+            R[i][j] = R[i][j] / t
         for j in range(n):
             if i != j:
                 t = R[j][i]
