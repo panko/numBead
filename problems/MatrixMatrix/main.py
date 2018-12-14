@@ -24,7 +24,8 @@ def print_matrix(M):
 
     for i in range(len(M)):  
         for j in range(len(M[0])):  
-            print("%.12f" % round(M[i][j], 12) ,end=" ")
+            print("{:.12f}".format(M[i][j]).replace(".000000000000", ""), end=" ")
+
         print("\n",end="") 
 
 def main():
