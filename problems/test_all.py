@@ -23,9 +23,6 @@ def main():
                 print("\t[failed in"+ str(i) +"]")
                 print("\t\texpected: ", expected)
                 print("\t\tgot: ", output)
-            
-    
-
 
 if __name__ == '__main__':
     main()
