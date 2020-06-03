@@ -1,4 +1,5 @@
 # numBead
+A "Numerikus módszertan" nevū tárgy gyakorlati feltételéhez tartozó beadandók megoldásai.
 
 > Pankó Péter  
 > prike18@gmail.com  
